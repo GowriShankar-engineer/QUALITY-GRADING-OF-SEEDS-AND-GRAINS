@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUALITY GRADING OF SEEDS AND GRAINS</title>
+    <style>
+        body{
+            font-family: montserrat;
+        }
+        .top-heading-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .middle-container{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .sub-heading{
+            
+            
+            color: rgb(13, 81, 230);
+            padding: 5px;
+            padding-left: 70px;
+
+        }
+        .fi{
+            border: 1px solid black;
+            padding: 5px;
+            margin: 30px 0;
+        }
+        .btn{
+            background-color: rgb(13, 81, 230);
+            color: white;
+            width: 150px;
+            padding: 5px;
+            border: none;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-left: 68px;
+        }
+        .input-div{
+            width: 100%;
+            
+            
+        }
+        .input1-div{
+            margin-top: 30px;
+            width: 100%;
+            background-color: rgba(31, 245, 31,0.2);
+            border: 1px solid rgba(31, 245, 31,0.5);
+            height: 150px;
+            width: 280px;
+            
+        }
+        .sub{
+            margin-left: 55px;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .lab{
+            
+            margin: 30px 0;
+            margin-left: 65px;  
+            color: rgb(1, 182, 1); 
+        }
+        .mid{
+            margin-left: 100px;
+            color: rgba(255, 0, 0,0.7);
+        }
+        .img{
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-heading-container">
+            <img src="https://www.rajalakshmi.org/image/logo2.png" height="110" width="350" class="img">
+        </div>
+        <div class="middle-container">
+            <div class="input-container">
+                <h2 class="sub-heading">UPLOAD TEST IMAGE</h2>
+                <form method="POST" enctype="multipart/form-data">
+                    <div class="input-div">
+                        <input type="file" name="image" id="" class="fi">
+                    </div>
+                    <div class="input-div">
+                        <input type="submit" value="PREDICT" class="btn sub">
+                    </div>
+                    <div class="input1-div">
+                        <h3 class="mid">OUTPUT</h3>
+                        <h3 class="lab">{{prediction}}</h3>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
